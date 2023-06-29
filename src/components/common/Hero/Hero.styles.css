@@ -1,0 +1,8 @@
+.navBarOffset {
+  padding: 3.15rem; /* Default size of bulma Navbar*/
+}
+
+/* Scroll Top Margin for Heros with NavBarOffset. Corrects anchor links to place hero below Navbar */
+.heroSMT {
+  scroll-margin-top: 500px; /* Set to a value known to exceed navBarOffset Padding */
+}
