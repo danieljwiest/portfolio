@@ -26,7 +26,6 @@ const ProjectGallery = ({
   for (let i = 1; i <= numItems; i++) {
     const index = `${i}`;
     const imgUrl = folderUrl.concat(fileNameStart, index, fileExt);
-    console.log(imgUrl);
     galleryArray.push(imgUrl);
   }
 
