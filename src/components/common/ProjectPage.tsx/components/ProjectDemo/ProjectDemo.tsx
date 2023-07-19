@@ -6,10 +6,10 @@ const ProjectDemo = ({ title, srcUrl }: { title: string; srcUrl: string }) => {
   return (
     <section
       id="projectDemo"
-      className="section is-large has-background-link-light"
+      className="section is-large has-background-link-light py-6"
     >
       <div className="container">
-        <div className="title is-2 is-flex is-justify-content-center">
+        <div className="title is-2 is-flex is-justify-content-center pb-6">
           {demoTitle}
         </div>
         <iframe
