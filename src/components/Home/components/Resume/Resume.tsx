@@ -19,9 +19,14 @@ const Resume = () => {
               <img src="/img/image_1_long.jpg.webp" alt="HeadShot"></img>
             </figure>
             <div className="is-flex is-justify-content-center my-4">
-              <button className="button is-medium is-responsive">
+              <a
+                className="button is-medium is-responsive"
+                href="/Daniel_Wiest_Software_Engineer_Resume.pdf"
+                target="_blank"
+                rel="noreferrer"
+              >
                 Full CV
-              </button>
+              </a>
             </div>
           </div>
           <div className="column is-1 is-hidden-touch"></div>

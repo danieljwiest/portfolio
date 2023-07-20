@@ -104,9 +104,15 @@ const Navbar = () => {
         <div className="navbar-end">
           <div className="navbar-item">
             <div className="buttons">
-              <button className="button is-light is-responsive">
+              <a
+                className="button is-light is-responsive"
+                href="/Daniel_Wiest_Software_Engineer_Resume.pdf"
+                download="Daniel_Wiest_Software_Engineer_Resume.pdf"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <strong>Download CV</strong>
-              </button>
+              </a>
             </div>
           </div>
         </div>
