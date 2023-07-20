@@ -34,8 +34,10 @@ const Hero = ({
       >
         <div className="hero-head"></div>
         <div id={navBarObserverTarget} className="hero-body">
-          <p className="title">{title}</p>
-          <p className="subtitle">{subtitle}</p>
+          <div className="is-flex is-flex-direction-column">
+            <p className="title has-text-light is-size-1">{title}</p>
+            <p className="subtitle has-text-light is-size-4">{subtitle}</p>
+          </div>
         </div>
         <div className="hero-foot"></div>
       </section>

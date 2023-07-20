@@ -6,7 +6,8 @@ import Hero from "../components/common/Hero/Hero";
 
 const Home = () => {
   const heroProps = {
-    title: "I'm Daniel Wiest A Front-End Develop",
+    title: "I'm Daniel Wiest",
+    subtitle: "An Entry Level Software Engineer",
     background: "url(../../../public/img/hero_img_example.jpg)",
   };
 
