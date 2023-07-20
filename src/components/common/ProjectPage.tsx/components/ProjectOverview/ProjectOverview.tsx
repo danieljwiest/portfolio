@@ -1,3 +1,4 @@
+//TODO: Implement a "builder" which composes the various sections (project overview, goals, etc) and adds to an array. Then spread the array in the return instead of copy/pasting code. The builder can check for empty sections and filter those out
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlay } from "@fortawesome/free-solid-svg-icons";
 import { ProjectLink } from "../../../../../types/AppTypes";
@@ -15,13 +16,13 @@ const ProjectOverview = ({
   goals: string[];
   techUsed: string[];
   hurdles: string[];
-  projectLinks: ProjectLink[];
+  projectLinks?: ProjectLink[];
 }) => {
   const goalList = goals.map((goal, index) => {
     return (
       <div key={`Goal-${index}`} className="is-flex pb-2">
         <span className="icon is-flex-shrink-0 ml-2">
-          <FontAwesomeIcon icon={faPlay} />
+          <FontAwesomeIcon icon={faPlay} size="xs" />
         </span>
         <span className="">{goal}</span>
       </div>
@@ -32,7 +33,7 @@ const ProjectOverview = ({
     return (
       <div key={`Tech-${index}`} className="is-flex  pb-2">
         <span className="icon is-flex-shrink-0 ml-2">
-          <FontAwesomeIcon icon={faPlay} />
+          <FontAwesomeIcon icon={faPlay} size="xs" />
         </span>
         <span>{tech}</span>
       </div>
@@ -43,25 +44,27 @@ const ProjectOverview = ({
     return (
       <div key={`Hurdle-${index}`} className="is-flex  pb-2">
         <span className="icon is-flex-shrink-0 ml-2">
-          <FontAwesomeIcon icon={faPlay} />
+          <FontAwesomeIcon icon={faPlay} size="xs" />
         </span>
         <span>{hurdle}</span>
       </div>
     );
   });
 
-  const projectLinkList = projectLinks.map((link, index) => {
-    return (
-      <div key={`Hurdle-${index}`} className="is-flex  pb-2">
-        <span className="icon is-flex-shrink-0 ml-2">
-          <FontAwesomeIcon icon={faPlay} />
-        </span>
-        <span>
-          <a href={link.url}>{link.text}</a>
-        </span>
-      </div>
-    );
-  });
+  const projectLinkList = !projectLinks
+    ? null
+    : projectLinks.map((link, index) => {
+        return (
+          <div key={`Hurdle-${index}`} className="is-flex  pb-2">
+            <span className="icon is-flex-shrink-0 ml-2">
+              <FontAwesomeIcon icon={faPlay} size="xs" />
+            </span>
+            <span>
+              <a href={link.url}>{link.text}</a>
+            </span>
+          </div>
+        );
+      });
 
   return (
     <section
@@ -92,10 +95,12 @@ const ProjectOverview = ({
               <h1 className="title is-3">Project Hurdles</h1>
               {...hurdlesList}
             </div>
-            <div>
-              <h1 className="title is-3">Project Links</h1>
-              {...projectLinkList}
-            </div>
+            {!projectLinkList ? null : (
+              <div>
+                <h1 className="title is-3">Project Links</h1>
+                {...projectLinkList}
+              </div>
+            )}
           </div>
         </div>
       </div>
