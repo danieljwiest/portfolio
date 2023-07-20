@@ -4,11 +4,11 @@ import { NavLinkData } from "../../../contexts/NavLinkContext/NavLinkContext.typ
 import "./Navbar.styles.css";
 
 const Navbar = () => {
-  const [isActive, setIsActive] = useState(false);
-  const [navLinkData] = useNavLinkContext(); //NavLinkData current set in the ContentPage componenents.
+  const [burgerActive, setBurgerActive] = useState(false);
+  const [navLinkData] = useNavLinkContext(); //NavLinkData currently set in the ContentPage componenents.
   const [navOverHero, setNavOverHero] = useState(false);
   const navColor = navOverHero ? "" : "is-dark";
-  const textColor = navOverHero ? "has-text-white" : "";
+  const textColor = navOverHero && !burgerActive ? "has-text-white" : "";
 
   //Observer used to update navBar styling on Scroll for Navbars that overlap a Hero.
   const observer = new IntersectionObserver(
@@ -55,7 +55,7 @@ const Navbar = () => {
       <div className="navbar-brand">
         <a className="navbar-item" href="/">
           <p
-            className={`logo ${textColor} is-size-2 has-text-centered has-text-justified`}
+            className={`logo has-text-white is-size-2 has-text-centered has-text-justified`}
           >
             DW
           </p>
@@ -65,11 +65,11 @@ const Navbar = () => {
         <button
           //   role="button"
           onClick={() => {
-            setIsActive(!isActive);
+            setBurgerActive(!burgerActive);
           }}
-          className={`navbar-burger ${isActive ? "is-active" : ""}`}
+          className={`navbar-burger ${burgerActive ? "is-active" : ""}`}
           aria-label="menu"
-          aria-expanded="false" //FIX: update this when active?
+          aria-expanded={burgerActive ? "true" : "false"} //FIX: update this when active?
           data-target="navbarBasicExample"
         >
           <span aria-hidden="true"></span>
@@ -82,7 +82,7 @@ const Navbar = () => {
 
       <div
         id="navbarBasicExample"
-        className={`navbar-menu ${isActive ? "is-active" : ""}`}
+        className={`navbar-menu ${burgerActive ? "is-active" : ""}`}
       >
         <div className="navbar-start">
           {navLinks}
