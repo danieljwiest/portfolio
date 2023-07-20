@@ -11,15 +11,17 @@ const About = () => {
           </div>
           <div className="tile is-parent is-vertical px-6">
             <h1 className="title is-1">My Bio</h1>
-            <p className="content is-size-5">
-              I am a successful Mechanical Engineer with more than 11 years of
-              professional experience seeking a career change into software
-              development.
-              <br />
-              <br />
-              In my previous career, I was strong performer with experience in
-              both management and as a technical lead. My most recent roles
-              included:
+            <div className="content is-size-5">
+              <p>
+                I am a successful Mechanical Engineer with more than 11 years of
+                professional experience seeking a career change into software
+                development.
+                <br />
+                <br />
+                In my previous career, I was strong performer with experience in
+                both management and as a technical lead. My most recent roles
+                included:
+              </p>
               <ul>
                 <li>
                   Regional Team Manger for the Oregon Transmission Section
@@ -28,14 +30,16 @@ const About = () => {
                 <li>Project Manager</li>
                 <li>Program Technical Lead</li>
               </ul>
-              To date my software experience has primarly utilized
-              Javascript/Typescript, React, and Node.JS. I am, however, an
-              Engineer at heart and am no stranger to adapting to the tools
-              needed for the project at hand.
-              <br />
-              <br />I am excited for the opportunity to continue to learn and
-              develop as Software Engineer.
-            </p>
+              <p>
+                To date my software experience has primarly utilized
+                Javascript/Typescript, React, and Node.JS. I am, however, an
+                Engineer at heart and am no stranger to adapting to the tools
+                needed for the project at hand.
+                <br />
+                <br />I am excited for the opportunity to continue to learn and
+                develop as Software Engineer.
+              </p>
+            </div>
           </div>
         </div>
       </div>
