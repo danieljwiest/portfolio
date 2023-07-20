@@ -34,3 +34,7 @@
     var(--imgURL) no-repeat center/cover;
   transform: scale(1.05);
 }
+
+.navBarOffset {
+  padding: 3.15rem; /* Default size of bulma Navbar*/
+}

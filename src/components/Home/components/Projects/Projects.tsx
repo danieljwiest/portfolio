@@ -52,13 +52,32 @@ const Projects = () => {
       category: "Node.js",
       imgURL: "url(../img/header-parser-square.png)",
     },
+    {
+      id: 8,
+      title: "URL Shortener Microservice",
+      category: "Node.js",
+      imgURL: "url(../img/url-shortener-square.png)",
+    },
+    {
+      id: 9,
+      title: "Exercise Tracker Microservice",
+      category: "Node.js",
+      imgURL: "url(../img/exercise-tracker-square.png",
+    },
+    {
+      id: 10,
+      title: "File Metadata Microservice",
+      category: "Node.js",
+      imgURL: "url(../img/file-metadata-square.png",
+    },
   ];
 
   return (
     <section
       id="projects"
-      className="section is-large has-background-warning-light"
+      className="section is-medium has-background-warning-light"
     >
+      <div className="navBarOffset"></div>
       <div className="container">
         <div className="title is-1 is-flex is-justify-content-center">
           Projects
