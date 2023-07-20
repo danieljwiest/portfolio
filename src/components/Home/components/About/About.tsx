@@ -4,21 +4,21 @@ const About = () => {
       <div className="navBarOffset"></div>
       <div className="container">
         <div className="tile is-ancestor">
-          <div className="tile">
+          <div className="tile px-6">
             <figure className="image">
               <img src="/img/image_1_long.jpg.webp" alt="HeadShot"></img>
             </figure>
           </div>
-          <div className="tile is-parent is-vertical">
+          <div className="tile is-parent is-vertical px-6">
             <h1 className="title is-1">My Bio</h1>
-            <p className="content">
+            <p className="content is-size-5">
               I am a successful Mechanical Engineer with more than 11 years of
               professional experience seeking a career change into software
               development.
               <br />
               <br />
-              In my previous career I was strong performer with experience in
-              both mangament and as a technical lead. My most recent roles
+              In my previous career, I was strong performer with experience in
+              both management and as a technical lead. My most recent roles
               included:
               <ul>
                 <li>
@@ -28,7 +28,6 @@ const About = () => {
                 <li>Project Manager</li>
                 <li>Program Technical Lead</li>
               </ul>
-              <br />
               To date my software experience has primarly utilized
               Javascript/Typescript, React, and Node.JS. I am, however, an
               Engineer at heart and am no stranger to adapting to the tools
