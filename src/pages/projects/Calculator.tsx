@@ -89,7 +89,7 @@ const Calculator = () => {
     },
   ];
 
-  return <ContentPage sections={sections} />;
+  return <ContentPage sections={sections} type="projectPage" />;
 };
 
 export default Calculator;
