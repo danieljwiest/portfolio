@@ -14,7 +14,7 @@ const Resume = () => {
           RESUME
         </div>
         <div className="columns is-desktop">
-          <div className={`column is-4-desktop is-justify-content-center`}>
+          <div className={`column is-5-desktop is-justify-content-center pt-5`}>
             <figure className="image is-3x4">
               <img src="/img/image_1_long.jpg.webp" alt="HeadShot"></img>
             </figure>
