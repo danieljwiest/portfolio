@@ -4,18 +4,18 @@ import ProjectDemo from "../../components/common/ProjectPage.tsx/components/Proj
 import Hero from "../../components/common/Hero/Hero";
 import { HeroProps } from "../../types/AppTypes";
 
-const WordMasters = () => {
-  const title = "Word Masters";
+const UrlShortener = () => {
+  const title = "URL Shortener Microservice";
 
   //Default Hero Props for all Project Pages
   const heroProps: HeroProps = {
     size: "is-large",
-    background: "url(../img/word-masters-long.png)",
+    background: "url(../img/url-shortener-long.png)",
     navBarOffset: true,
   };
 
   //Link to Demo if applicable
-  const demoUrl = "https://frabjous-druid-82c03f.netlify.app/";
+  const demoUrl = "https://fcc-headerparser-production.up.railway.app/";
 
   //Link to gallery if applicable
   //   const galleryUrl = "";
@@ -23,20 +23,20 @@ const WordMasters = () => {
   //Project overview/description paragraphs
   const overviewText = (
     <p>
-      The scope for the Word Masters project is to create a clone of the popular
-      Wordle game using HTML, CSS, and Javascript. This project builds on
-      previous course work and introduces AJAX requests, JSON, and async/await
-      functions.
+      The scope of the URL Shortener Microservice is to create a service which
+      creates &quot;short Urls&quot; for a user provided url. API requests using
+      the shortened url redirect the user to the original URL. The project tests
+      knowledge of Node.js and the Express framework.
       <br />
       <br />
-      The project is the final project of the Frontend Masters, &quot;Complete
-      Intro to Web Development v3&quot; course. It represents the combined use
-      of HTML, CSS, and Javascript in a single project with the addition of
-      server requests.
+      The project is part of the FreeCodeCamp, &quot;Backend Development &
+      APIs&quot; course and represents the the use of Node.js and Express
+      framework. The project utilizes boilerplate code, provided by
+      FreeCodeCamp, for the server setup, HTML, and CSS.
       <br />
       <br />
-      All code for this project was written from scratch based on the project
-      prompt.
+      After completing the base project tasks in Replit, the project was moved
+      to gitHub and is now publically hosted (see Project Links).
     </p>
   );
 
@@ -44,30 +44,31 @@ const WordMasters = () => {
   const projectLinks = [
     {
       text: "GitHub Repo",
-      url: "https://github.com/danieljwiest/intro-to-webdev-v3/tree/2ce765baee80b58464ec5faaad9fb31feac5b49b/word-masters",
+      url: "https://github.com/danieljwiest/fcc-urlshortener",
     },
     {
-      text: "Frontend Masters Project Overview",
-      url: "https://btholt.github.io/complete-intro-to-web-dev-v3/lessons/talking-to-servers/project",
+      text: "FreeCodeCamp Project Overview",
+      url: "https://www.freecodecamp.org/learn/back-end-development-and-apis/back-end-development-and-apis-projects/url-shortener-microservice",
+    },
+    {
+      text: "URL Shortener Microservice Hosted Site",
+      url: "https://fcctimestamp-microservice-production.up.railway.app/",
     },
   ];
 
   //Project Goals. Array of bullet points.
   const goalsText = [
-    "Complete a full project from scratch utilizing HTML, CSS, JS",
-    "Communicate with servers to request and validate information",
-    'FUTURE GOAL: Implement a "Keyboard" to visually display previously checked letters',
-    'FUTURE GOAL: Implement a more interesting "Win/Loss" display when the game is completed',
+    "Complete a backend design for a simple microservice utilizing Node.js and Express",
+    "Implement user input validation",
+    "Implement error handling for middleware functions",
+    "Increase familiarity processing HTML forms and POST requests",
   ];
 
   //List of technologies used (JS, React, etc). Array of bullet points.
-  const techUsedText = ["JavaScript", "HTML", "CSS", "AJAX"];
+  const techUsedText = ["JavaScript", "Node.js", "Express"];
 
   //List of hurdles in developing the project
-  const hurdlesText = [
-    'Developing the logic for correctly styling multiple  "Non-Exact" matches',
-    'Implementing a "Card-Flip" animation',
-  ];
+  const hurdlesText = ["Validating user provided URLs"];
 
   const sections = [
     { label: "Home", link: "#home", content: <Hero {...heroProps} /> },
@@ -95,4 +96,4 @@ const WordMasters = () => {
   return <ContentPage sections={sections} type="projectPage" />;
 };
 
-export default WordMasters;
+export default UrlShortener;

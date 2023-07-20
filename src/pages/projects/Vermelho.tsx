@@ -21,7 +21,25 @@ const Vermelho = () => {
   // const galleryUrl = "";
 
   //Project overview/description paragraphs
-  const overviewText = <p></p>;
+  const overviewText = (
+    <p>
+      The Vermelho Game Project is a web based implementation of the popular
+      board game Azul. The project was a self directed capstone project after
+      completing my React coursework.
+      <br />
+      <br />
+      The primary goals for the project were to build a more involved
+      application within React, showcase completed work, and practice
+      Typescript.
+      <br />
+      <br />
+      The project utilizes vanilla CSS for all styling and game assests and was
+      built within the React framework utilizing Typescript.
+      <br />
+      <br />
+      All code for this project was written from scratch.
+    </p>
+  );
 
   const projectLinks = [
     {
@@ -40,6 +58,7 @@ const Vermelho = () => {
     "Explore more complicated state management in react without utilizing Context",
     "Attempt graphic design utilizing vanilla CSS & explore use of color palletes",
     "FUTURE GOAL: Develop a game server and implement multi-user game play with authentication",
+    "FUTURE GOAL: Refactor the primary reducer function to reduce file size and improve readability",
   ];
 
   //List of technologies used (JS, React, etc). Array of bullet points.
@@ -74,7 +93,7 @@ const Vermelho = () => {
     },
   ];
 
-  return <ContentPage sections={sections} />;
+  return <ContentPage sections={sections} type="projectPage" />;
 };
 
 export default Vermelho;

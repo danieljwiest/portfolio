@@ -23,12 +23,12 @@ const Calculator = () => {
   //Project overview/description paragraphs
   const overviewText = (
     <p>
-      The goal of the Calculator project was to create a functional calculator
-      using HTML, CSS, and JavaScript. The design of the calculator is based off
-      of the iOS calculator app.
+      The goal for the Calculator project is to create a functional calculator
+      using HTML, CSS, and JavaScript. The calculator design is based off of the
+      iOS calculator app.
       <br />
       <br />
-      The project was part of the Frontend Masters, &quot;Complete Intro to Web
+      The project is part of the Frontend Masters, &quot;Complete Intro to Web
       Development v3&quot; course and represents the combined use of HTML, CSS,
       and Javascript in a single project.
       <br />

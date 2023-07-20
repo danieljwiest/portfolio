@@ -2,7 +2,13 @@ import { useEffect } from "react";
 import { useNavLinkContext } from "../../../contexts/NavLinkContext/NavLinkContext";
 import { SectionData } from "../../../types/AppTypes";
 
-const ContentPage = ({ sections }: { sections: SectionData[] }) => {
+const ContentPage = ({
+  sections,
+  type,
+}: {
+  sections: SectionData[];
+  type: string;
+}) => {
   const [, setNavLinks] = useNavLinkContext();
   // let hasHero = false;
   // let heroSize: HeroProps["size"];
@@ -29,6 +35,10 @@ const ContentPage = ({ sections }: { sections: SectionData[] }) => {
   const navLinkArray = sections.map((section) => {
     return { label: section.label, link: section.link };
   });
+
+  //add a link back to projects section on the mainpage
+  if (type === "projectPage")
+    navLinkArray.push({ label: "Projects List", link: "/#projects" });
 
   useEffect(() => {
     setNavLinks(navLinkArray);

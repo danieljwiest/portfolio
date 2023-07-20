@@ -24,19 +24,19 @@ const TimeStamp = () => {
   //Project overview/description paragraphs
   const overviewText = (
     <p>
-      The scope of the Timestamp Microservice was to create service to convert
-      dates between &quot;UTC&quot; and &quot;UNIX&quot; formats. The project
-      tested knowledge of Node.js and the Express framework.
+      The scope of the Timestamp Microservice is to create a service for
+      converting dates between &quot;UTC&quot; and &quot;UNIX&quot; formats. The
+      project tests knowledge of Node.js and the Express framework.
       <br />
       <br />
-      The project was part of the FreeCodeCamp, &quot;Backend Development &
+      The project is part of the FreeCodeCamp, &quot;Backend Development &
       APIs&quot; course and represents the the use of Node.js and Express
       framework. The project utilizes boilerplate code, provided by
       FreeCodeCamp, for the server setup, HTML, and CSS.
       <br />
       <br />
-      After completing the base tasks of the project in Replit, the project was
-      moved to gitHub and is is now publically hosted (see Project Links).
+      After completing the base project tasks in Replit, the project was moved
+      to gitHub and is now publically hosted (see Project Links).
     </p>
   );
 
@@ -58,10 +58,9 @@ const TimeStamp = () => {
 
   //Project Goals. Array of bullet points.
   const goalsText = [
-    "Complete a full project from scratch utilizing HTML, CSS, JS",
-    "Communicate with servers to request and validate information",
-    'FUTURE GOAL: Implement a "Keyboard" to visually display previously checked letters',
-    'FUTURE GOAL: Implement a more interesting "Win/Loss" display when the game is completed',
+    "Complete a backend design for a simple microservice",
+    "Process API requests with optional input",
+    "Practice use of middleware functions with Express and Node.js",
   ];
 
   //List of technologies used (JS, React, etc). Array of bullet points.
@@ -96,7 +95,7 @@ const TimeStamp = () => {
     },
   ];
 
-  return <ContentPage sections={sections} />;
+  return <ContentPage sections={sections} type="projectPage" />;
 };
 
 export default TimeStamp;

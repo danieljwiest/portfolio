@@ -4,13 +4,13 @@ import ProjectDemo from "../../components/common/ProjectPage.tsx/components/Proj
 import Hero from "../../components/common/Hero/Hero";
 import { HeroProps } from "../../types/AppTypes";
 
-const HeaderParser = () => {
-  const title = "Request Header Parser Microservice";
+const ExerciseTracker = () => {
+  const title = "Exercise Tracker Microservice";
 
   //Default Hero Props for all Project Pages
   const heroProps: HeroProps = {
     size: "is-large",
-    background: "url(../img/header-parser-long.png)",
+    background: "url(../img/exercise-tracker-long.png)",
     navBarOffset: true,
   };
 
@@ -23,15 +23,16 @@ const HeaderParser = () => {
   //Project overview/description paragraphs
   const overviewText = (
     <p>
-      The scope of the Request Header Parser Microservice is to create a service
-      to parse an API request header and return a JSON object of the parsed
-      information. The project tests knowledge of Node.js and the Express
-      framework.
+      The scope of the Exercise Tracker Microservice is to create a service to
+      allow for users to track excercises. Users can create a username, submit
+      exercise logs, and request a list of previous exercises. The project
+      utilizes a MongoDB database to store the users and exercise logs. The
+      project tests knowledge of Node.js, the Express framework, and MongoDB.
       <br />
       <br />
       The project is part of the FreeCodeCamp, &quot;Backend Development &
-      APIs&quot; course and represents the the use of Node.js and Express
-      framework. The project utilizes boilerplate code, provided by
+      APIs&quot; course and represents the the use of Node.js, the Express
+      framework, and MongoDB. The project utilizes boilerplate code, provided by
       FreeCodeCamp, for the server setup, HTML, and CSS.
       <br />
       <br />
@@ -44,30 +45,36 @@ const HeaderParser = () => {
   const projectLinks = [
     {
       text: "GitHub Repo",
-      url: "https://github.com/danieljwiest/fcc-headerparser",
+      url: "https://github.com/danieljwiest/fcc-exercise-tracker",
     },
     {
       text: "FreeCodeCamp Project Overview",
-      url: "https://www.freecodecamp.org/learn/back-end-development-and-apis/back-end-development-and-apis-projects/request-header-parser-microservice",
+      url: "https://www.freecodecamp.org/learn/back-end-development-and-apis/back-end-development-and-apis-projects/exercise-tracker",
     },
     {
-      text: "Request Header Parser Microservice Hosted Site",
+      text: "URL Shortener Microservice Hosted Site",
       url: "https://fcctimestamp-microservice-production.up.railway.app/",
     },
   ];
 
   //Project Goals. Array of bullet points.
   const goalsText = [
-    "Complete a backend design for a simple microservice utilizing Node.js and Express.",
-    "Practice processing API requests",
-    "Increase familiarity with request headers",
+    "Complete a backend design for a simple microservice utilizing Node.js, Express and MongoDB",
+    "Setup a Database Utilizing MongoDB",
+    "Implement user input validation",
+    "Implement error handling for middleware functions",
+    "Increase familiarity processing HTML forms and POST requests",
   ];
 
   //List of technologies used (JS, React, etc). Array of bullet points.
-  const techUsedText = ["JavaScript", "Node.js", "Express"];
+  const techUsedText = ["JavaScript", "Node.js", "Express", "MongoDB"];
 
   //List of hurdles in developing the project
-  const hurdlesText = ["None"];
+  const hurdlesText = [
+    "Setting up a MongoDB Database",
+    "Formatting Dates",
+    "Validating Date Formats",
+  ];
 
   const sections = [
     { label: "Home", link: "#home", content: <Hero {...heroProps} /> },
@@ -95,4 +102,4 @@ const HeaderParser = () => {
   return <ContentPage sections={sections} type="projectPage" />;
 };
 
-export default HeaderParser;
+export default ExerciseTracker;
