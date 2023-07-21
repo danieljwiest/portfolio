@@ -1,4 +1,5 @@
 //TODO: Implement an image modal when clicking on an image.
+import "./ProjectGallery.styles.css";
 
 interface GalleryData {
   folderUrl: string;
@@ -45,6 +46,7 @@ const ProjectGallery = ({
       id="projectGallery"
       className="section is-large has-background-light py-6"
     >
+      <div className="navBarOffset"></div>
       <div className="container ">
         <div className="title is-2 is-flex is-justify-content-center pb-6">
           {galleryTitle}
@@ -58,7 +60,11 @@ const ProjectGallery = ({
                   key={item}
                 >
                   <figure className="image is-square">
-                    <img src={item} alt={fileNameStart}></img>
+                    <img
+                      className="imgCover"
+                      src={item}
+                      alt={fileNameStart}
+                    ></img>
                   </figure>
                 </div>
               ))}

@@ -24,7 +24,7 @@ const ExerciseTracker = () => {
   const overviewText = (
     <p>
       The scope of the Exercise Tracker Microservice is to create a service to
-      allow for users to track excercises. Users can create a username, submit
+      allow users to track excercises. Users can create a username, submit
       exercise logs, and request a list of previous exercises. The project
       utilizes a MongoDB database to store the users and exercise logs. The
       project tests knowledge of Node.js, the Express framework, and MongoDB.

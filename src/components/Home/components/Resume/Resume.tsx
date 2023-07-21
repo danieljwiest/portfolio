@@ -22,7 +22,7 @@ const Resume = () => {
                 target="_blank"
                 rel="noreferrer"
               >
-                Full CV
+                Full Resume
               </a>
             </div>
           </div>

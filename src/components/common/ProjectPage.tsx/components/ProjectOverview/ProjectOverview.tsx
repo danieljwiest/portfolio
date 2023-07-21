@@ -24,7 +24,7 @@ const ProjectOverview = ({
         <span className="icon is-flex-shrink-0 ml-2">
           <FontAwesomeIcon icon={faPlay} size="xs" />
         </span>
-        <span className="">{goal}</span>
+        <span className="is-size-5">{goal}</span>
       </div>
     );
   });
@@ -35,7 +35,7 @@ const ProjectOverview = ({
         <span className="icon is-flex-shrink-0 ml-2">
           <FontAwesomeIcon icon={faPlay} size="xs" />
         </span>
-        <span>{tech}</span>
+        <span className="is-size-5">{tech}</span>
       </div>
     );
   });
@@ -46,7 +46,7 @@ const ProjectOverview = ({
         <span className="icon is-flex-shrink-0 ml-2">
           <FontAwesomeIcon icon={faPlay} size="xs" />
         </span>
-        <span>{hurdle}</span>
+        <span className="is-size-5">{hurdle}</span>
       </div>
     );
   });
@@ -71,6 +71,7 @@ const ProjectOverview = ({
       id="overview"
       className="section is-large has-background-light py-6 "
     >
+      <div className="navBarOffset"></div>
       <div className="container">
         <div className="title is-1 is-flex is-justify-content-center mb-6">
           {title}
@@ -79,7 +80,7 @@ const ProjectOverview = ({
           <div className="tile is-parent is-vertical px-6">
             <div className="mb-5">
               <h1 className="title is-3"> Project Overview</h1>
-              {overview}
+              <div className="is-size-5"> {overview}</div>
             </div>
             <div className="mb-5">
               <h1 className="title is-3">Goals</h1>

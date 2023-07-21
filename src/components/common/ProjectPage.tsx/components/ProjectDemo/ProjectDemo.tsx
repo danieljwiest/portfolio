@@ -8,6 +8,7 @@ const ProjectDemo = ({ title, srcUrl }: { title: string; srcUrl: string }) => {
       id="projectDemo"
       className="section is-large has-background-light py-6"
     >
+      <div className="navBarOffset"></div>
       <div className="container">
         <div className="title is-2 is-flex is-justify-content-center pb-6">
           {demoTitle}

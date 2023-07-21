@@ -24,8 +24,8 @@ const UrlShortener = () => {
   const overviewText = (
     <p>
       The scope of the URL Shortener Microservice is to create a service which
-      creates &quot;short Urls&quot; for a user provided url. API requests using
-      the shortened url redirect the user to the original URL. The project tests
+      creates &quot;short URLs&quot; for a user provided URL. API requests using
+      the shortened URL redirect the user to the original URL. The project tests
       knowledge of Node.js and the Express framework.
       <br />
       <br />

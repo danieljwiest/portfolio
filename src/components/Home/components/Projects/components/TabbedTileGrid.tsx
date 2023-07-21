@@ -26,12 +26,13 @@ const GridComponent = ({ data }: { data: DataItem[] }) => {
   });
 
   const numItems = filteredData.length;
-  const numRows = Math.ceil(numItems / 3);
+  const NUM_OF_COLUMNS = 3;
+  const numRows = Math.ceil(numItems / NUM_OF_COLUMNS);
 
   const gridRows: DataItem[][] = [];
   for (let i = 0; i < numRows; i++) {
-    const rowStartIndex = i * 3;
-    const rowEndIndex = Math.min(rowStartIndex + 3, numItems);
+    const rowStartIndex = i * NUM_OF_COLUMNS;
+    const rowEndIndex = Math.min(rowStartIndex + NUM_OF_COLUMNS, numItems);
     const rowItems = filteredData.slice(rowStartIndex, rowEndIndex);
     gridRows.push(rowItems);
   }

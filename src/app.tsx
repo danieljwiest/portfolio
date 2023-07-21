@@ -18,6 +18,10 @@ import ScrollToTop from "./components/common/ScrollToTop/ScrollToTop";
 import WordMasters from "./pages/projects/WordMasters";
 import TimeStamp from "./pages/projects/TimeStamp";
 import HeaderParser from "./pages/projects/HeaderParser";
+import UrlShortener from "./pages/projects/UrlShortener";
+import ExerciseTracker from "./pages/projects/ExerciseTracker";
+import FileMetadata from "./pages/projects/FileMetadata";
+import UtilityShed from "./pages/projects/UtilityShed";
 
 //Default Query Client
 // const queryClient = new QueryClient({
@@ -46,6 +50,10 @@ const App = () => {
                 <Route path="/" element={<Home />} />
                 {/* <Route path="/projects/*" element={<ProjectPage />}></Route> */}
                 <Route path="/projects/vermelho-game" element={<Vermelho />} />
+                <Route
+                  path="/projects/utility-shed"
+                  element={<UtilityShed />}
+                />
                 <Route path="/projects/calculator" element={<Calculator />} />
                 <Route
                   path="/projects/word-masters"
@@ -58,6 +66,18 @@ const App = () => {
                 <Route
                   path="/projects/header-parser-microservice"
                   element={<HeaderParser />}
+                />
+                <Route
+                  path="/projects/url-shortener-microservice"
+                  element={<UrlShortener />}
+                />
+                <Route
+                  path="/projects/exercise-tracker-microservice"
+                  element={<ExerciseTracker />}
+                />
+                <Route
+                  path="/projects/file-metadata-microservice"
+                  element={<FileMetadata />}
                 />
               </Route>
 

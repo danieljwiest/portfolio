@@ -3,28 +3,31 @@ const About = () => {
     <section id="about" className="section is-medium has-background-light">
       <div className="navBarOffset"></div>
       <div className="container">
+        <div className="title is-1 is-flex is-justify-content-center mb-6">
+          MY BIO
+        </div>
         <div className="tile is-ancestor">
-          <div className="tile px-6">
+          <div className="tile px-6 pt-5">
             <figure className="image">
               <img src="/img/image_1_long.jpg.webp" alt="HeadShot"></img>
             </figure>
           </div>
           <div className="tile is-parent is-vertical px-6">
-            <h1 className="title is-1">My Bio</h1>
+            {/* <h1 className="title is-1">My Bio</h1> */}
             <div className="content is-size-5">
               <p>
-                I am a successful Mechanical Engineer with more than 11 years of
-                professional experience seeking a career change into software
-                development.
+                Proffessionally, I am a successful liscensed Mechanical Engineer
+                with more than 11 years of professional experience seeking a
+                career change into software development.
                 <br />
                 <br />
-                In my previous career, I was strong performer with experience in
-                both management and as a technical lead. My most recent roles
-                included:
+                In my previous career, I have been a strong performer with
+                experience in both management and as a technical leader. My most
+                recent role included the following responsibilities:
               </p>
               <ul>
                 <li>
-                  Regional Team Manger for the Oregon Transmission Section
+                  Regional Team Manager for the Oregon Transmission Section
                 </li>
                 <li>Lead Technical Engineer</li>
                 <li>Project Manager</li>
@@ -36,8 +39,13 @@ const About = () => {
                 Engineer at heart and am no stranger to adapting to the tools
                 needed for the project at hand.
                 <br />
+                <br />
+                In my personal life, you will usually find my chasing around my
+                two young kids, playing a board game, hiking, or working on
+                endless house projects.
+                <br />
                 <br />I am excited for the opportunity to continue to learn and
-                develop as Software Engineer.
+                develop as a Software Engineer.
               </p>
             </div>
           </div>

@@ -6,8 +6,8 @@ import Hero from "../components/common/Hero/Hero";
 
 const Home = () => {
   const heroProps = {
-    title: "I'm Daniel Wiest",
-    subtitle: "An Entry Level Software Engineer",
+    title: "Daniel Wiest",
+    subtitle: "Entry Level Software Engineer",
     background: "url(../../../public/img/hero_img_example.jpg)",
   };
 
@@ -18,7 +18,7 @@ const Home = () => {
     { label: "Resume", link: "#resume", content: <Resume /> },
   ];
 
-  return <ContentPage sections={sections} />;
+  return <ContentPage sections={sections} type="homePage" />;
 };
 
 export default Home;

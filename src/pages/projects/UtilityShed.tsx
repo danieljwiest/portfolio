@@ -68,8 +68,7 @@ const UtilityShed = () => {
     "Rough Carpentry",
     "Masonry",
     "Shovel & Pick",
-    "Hammer & Nails",
-    "Power Saws",
+    "Electrical Wiring",
   ];
 
   //List of hurdles in developing the project

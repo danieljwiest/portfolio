@@ -111,7 +111,7 @@ const Navbar = () => {
                 target="_blank"
                 rel="noreferrer"
               >
-                <strong>Download CV</strong>
+                <strong>Download Resume</strong>
               </a>
             </div>
           </div>

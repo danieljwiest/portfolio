@@ -48,7 +48,7 @@ const Projects = () => {
     },
     {
       id: 7,
-      title: "Header Parser Microservice",
+      title: "Request Header Parser Microservice",
       category: "Node.js",
       imgURL: "url(../img/header-parser-square.png)",
     },
@@ -77,7 +77,7 @@ const Projects = () => {
       <div className="navBarOffset"></div>
       <div className="container">
         <div className="title is-1 is-flex is-justify-content-center">
-          Projects
+          PROJECTS
         </div>
         <div className="tile is-ancestor"></div>
         <TileGrid data={[...projectList]} />
