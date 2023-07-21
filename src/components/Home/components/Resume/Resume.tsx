@@ -4,10 +4,7 @@ import ResumeItem from "./components/ResumeItem/ResumeItem";
 
 const Resume = () => {
   return (
-    <section
-      id="resume"
-      className="section is-medium has-background-primary-light"
-    >
+    <section id="resume" className="section is-medium has-background-light">
       <div className="navBarOffset"></div>
       <div className="container">
         <div className="title is-1 is-flex is-justify-content-center mb-6">
