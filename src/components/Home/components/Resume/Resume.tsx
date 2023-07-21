@@ -64,6 +64,26 @@ const Resume = () => {
               period="05/2011-07/2013"
               status="fulltime"
             />
+            <div className="title is-size-3">Education</div>
+            <ResumeItem
+              company={"Gonzaga University"}
+              location="Spokane, WA"
+              position="BS Mechanical Engineering"
+              period="08/2006-05/2010"
+            />
+            <div className="title is-size-3">Liscensure</div>
+            <ResumeItem
+              company={"WA State Board of Licensing"}
+              location="WA"
+              position="Professional Engineer No. 53377 "
+              period="12/2015-Present"
+            />
+            <ResumeItem
+              company={"OSBEELS"}
+              location="OR"
+              position="Professional Engineer No. 96310PE"
+              period="07/2020-Present"
+            />
           </div>
         </div>
       </div>

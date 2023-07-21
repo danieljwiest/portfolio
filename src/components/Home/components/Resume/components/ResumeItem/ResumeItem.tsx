@@ -12,7 +12,7 @@ const ResumeItem = ({
   location = "City X, ST",
   position = "<Position Name>",
   period = "10/1955-05/1965",
-  status = "fulltime",
+  status = "",
 }: {
   company?: string;
   location?: string;
@@ -47,7 +47,13 @@ const ResumeItem = ({
 
       <div className="column is-flex-direction-columns is-justify-content-flex-end">
         <div className="is-flex is-justify-content-flex-end pb-1 mb-3">
-          <div className="tag  is-rounded is-info is-medium">{statusValue}</div>
+          {status === "" ? (
+            <div></div>
+          ) : (
+            <div className="tag  is-rounded is-info is-medium">
+              {statusValue}
+            </div>
+          )}
         </div>
         <div className="is-flex is-justify-content-right">
           <span className="icon">
