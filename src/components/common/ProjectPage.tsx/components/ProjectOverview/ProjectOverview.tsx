@@ -69,7 +69,7 @@ const ProjectOverview = ({
   return (
     <section
       id="overview"
-      className="section is-large has-background-link-light py-6 "
+      className="section is-large has-background-light py-6 "
     >
       <div className="container">
         <div className="title is-1 is-flex is-justify-content-center mb-6">

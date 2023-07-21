@@ -73,10 +73,7 @@ const Projects = () => {
   ];
 
   return (
-    <section
-      id="projects"
-      className="section is-medium has-background-warning-light"
-    >
+    <section id="projects" className="section is-medium has-background-light">
       <div className="navBarOffset"></div>
       <div className="container">
         <div className="title is-1 is-flex is-justify-content-center">

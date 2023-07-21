@@ -43,7 +43,7 @@ const ProjectGallery = ({
   return (
     <section
       id="projectGallery"
-      className="section is-large has-background-link-light py-6"
+      className="section is-large has-background-light py-6"
     >
       <div className="container ">
         <div className="title is-2 is-flex is-justify-content-center pb-6">

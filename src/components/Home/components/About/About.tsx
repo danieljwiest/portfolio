@@ -1,6 +1,6 @@
 const About = () => {
   return (
-    <section id="about" className="section is-medium has-background-link-light">
+    <section id="about" className="section is-medium has-background-light">
       <div className="navBarOffset"></div>
       <div className="container">
         <div className="tile is-ancestor">
