@@ -17,7 +17,7 @@ const Contact = () => {
   //   </section>
   // );
   return (
-    <footer className="footer">
+    <footer className="footer borderTop">
       <div className="columns">
         <div className="column is-one-third is-flex is-justify-content-center is-align-content-center is-flex-direction-column">
           <div className="subtitle is-flex is-justify-content-center">

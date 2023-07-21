@@ -38,3 +38,11 @@
 .navBarOffset {
   padding: 3.15rem; /* Default size of bulma Navbar*/
 }
+
+.borderTop {
+  border-top: 1px solid black;
+}
+
+.borderBottom {
+  border-bottom: 1px solid black;
+}

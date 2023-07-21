@@ -2,7 +2,3 @@
 .heroSMT {
   scroll-margin-top: 500px; /* Set to a value known to exceed navBarOffset Padding */
 }
-
-.hero {
-  border-bottom: 1px solid black;
-}

@@ -39,7 +39,7 @@ const Hero = ({
             <p className="subtitle has-text-light is-size-4">{subtitle}</p>
           </div>
         </div>
-        <div className="hero-foot"></div>
+        <div className="hero-foot borderBottom"></div>
       </section>
     </div>
   );
