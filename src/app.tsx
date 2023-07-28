@@ -22,6 +22,7 @@ import UrlShortener from "./pages/projects/UrlShortener";
 import ExerciseTracker from "./pages/projects/ExerciseTracker";
 import FileMetadata from "./pages/projects/FileMetadata";
 import UtilityShed from "./pages/projects/UtilityShed";
+import CubeCobra from "./pages/projects/CubeCobra";
 
 //Default Query Client
 // const queryClient = new QueryClient({
@@ -59,6 +60,7 @@ const App = () => {
                   path="/projects/word-masters"
                   element={<WordMasters />}
                 />
+                <Route path="/projects/cube-cobra" element={<CubeCobra />} />
                 <Route
                   path="/projects/timestamp-microservice"
                   element={<TimeStamp />}
