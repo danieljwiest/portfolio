@@ -28,6 +28,14 @@ const Resume = () => {
           </div>
           <div className="column is-1 is-hidden-touch"></div>
           <div className="column">
+            <div className="title is-size-3">Software Languages</div>
+            <ResumeItem
+              company=""
+              location=""
+              position="JavaScript, Typescript, Node.js, Express, HTML, CSS"
+              period=""
+              status=""
+            />
             <div className="title is-size-3">Work Experience</div>
             <ResumeItem
               company={"HDR Engineering, Inc"}

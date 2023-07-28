@@ -10,7 +10,8 @@ function convertDateRangeFormat(dateRange: string) {
 
 function formatDate(dateString: string) {
   const [month, year] = dateString.split("/");
-  const dateObj = new Date(parseInt(year), parseInt(month.slice(0)));
+
+  const dateObj = new Date(parseInt(year), parseInt(month) - 1);
   const fullMonth = dateObj.toLocaleString("en-US", { month: "short" });
   return `${fullMonth} ${year}`;
 }

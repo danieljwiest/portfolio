@@ -20,7 +20,7 @@ const ResumeItem = ({
   period?: string;
   status?: string;
 }) => {
-  const dateRange = convertDateRangeFormat(period);
+  const dateRange = period === "" ? null : convertDateRangeFormat(period);
   // const [periodStart, periodEnd] = convertDateRangeFormat(period).split("-");
   const statusValue = status.toUpperCase();
 
@@ -29,19 +29,27 @@ const ResumeItem = ({
       <div className="column is-7 mb-4">
         <h4 className="is-size-5 mb-4 "> {position}</h4>
         <div className="is-flex is-flex-wrap-wrap">
-          <div className="mr-3">
-            <span className="icon">
-              <FontAwesomeIcon icon={faBuilding} />
-            </span>
-            <span className="CompanyName">{company}</span>
-          </div>
+          {company === "" ? (
+            <div></div>
+          ) : (
+            <div className="mr-3">
+              <span className="icon">
+                <FontAwesomeIcon icon={faBuilding} />
+              </span>
+              <span className="CompanyName">{company}</span>
+            </div>
+          )}
 
-          <div>
-            <span className="icon">
-              <FontAwesomeIcon icon={faLocationDot} />
-            </span>
-            <span>{location}</span>
-          </div>
+          {location === "" ? (
+            <div></div>
+          ) : (
+            <div>
+              <span className="icon">
+                <FontAwesomeIcon icon={faLocationDot} />
+              </span>
+              <span>{location}</span>
+            </div>
+          )}
         </div>
       </div>
 
@@ -55,12 +63,16 @@ const ResumeItem = ({
             </div>
           )}
         </div>
-        <div className="is-flex is-justify-content-right">
-          <span className="icon">
-            <FontAwesomeIcon icon={faCalendarDays} />
-          </span>
-          <span>{dateRange}</span>
-        </div>
+        {period === "" ? (
+          <div></div>
+        ) : (
+          <div className="is-flex is-justify-content-right">
+            <span className="icon">
+              <FontAwesomeIcon icon={faCalendarDays} />
+            </span>
+            <span>{dateRange}</span>
+          </div>
+        )}
       </div>
     </div>
   );
