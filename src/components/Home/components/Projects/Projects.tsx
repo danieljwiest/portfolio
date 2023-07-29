@@ -63,7 +63,7 @@ const Projects = () => {
       id: 9,
       title: "Utility Shed",
       category: "Hobby",
-      imgURL: "url(../public/img/shed_final.jpg)",
+      imgURL: "url(../img/shed_final.jpg)",
     },
 
     {

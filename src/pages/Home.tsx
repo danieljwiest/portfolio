@@ -8,7 +8,7 @@ const Home = () => {
   const heroProps = {
     title: "Daniel Wiest",
     subtitle: "Entry Level Software Engineer",
-    background: "url(../../../public/img/hero_img_example.jpg)",
+    background: "url(../img/hero_img_example.jpg)",
   };
 
   const sections = [

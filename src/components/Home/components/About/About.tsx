@@ -16,13 +16,13 @@ const About = () => {
             {/* <h1 className="title is-1">My Bio</h1> */}
             <div className="content is-size-5">
               <p>
-                Proffessionally, I am a successful licensed Mechanical Engineer
-                with more than 12 years of professional experience seeking a
-                career change into software development.
+                Proffessionally, I am a successful, licensed Mechanical Engineer
+                with more than 12 years of experience seeking a career change
+                into software development.
                 <br />
                 <br />
                 In my previous career, I have been a strong performer with
-                experience in both management and as a technical leader. My most
+                experience both in management and as a technical leader. My most
                 recent role included the following responsibilities:
               </p>
               <ul>
@@ -40,7 +40,7 @@ const About = () => {
                 needed for the project at hand.
                 <br />
                 <br />
-                In my personal life, you will usually find my chasing around my
+                In my personal life, you will usually find me chasing around my
                 two young kids, playing a board game, hiking, or working on
                 endless house projects.
                 <br />
