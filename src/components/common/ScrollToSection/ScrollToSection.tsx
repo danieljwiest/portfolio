@@ -11,7 +11,7 @@ const ScrollToSection = () => {
 
       // Scroll to the section smoothly
       if (element) {
-        element.scrollIntoView({ behavior: "smooth" });
+        element.scrollIntoView();
       }
     }
   }, [location]);
