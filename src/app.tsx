@@ -23,6 +23,7 @@ import ExerciseTracker from "./pages/projects/ExerciseTracker";
 import FileMetadata from "./pages/projects/FileMetadata";
 import UtilityShed from "./pages/projects/UtilityShed";
 import CubeCobra from "./pages/projects/CubeCobra";
+import ScrollToSection from "./components/common/ScrollToSection/ScrollToSection";
 
 //Default Query Client
 // const queryClient = new QueryClient({
@@ -43,6 +44,7 @@ const App = () => {
 
           <NavLinkProvider>
             <ScrollToTop />
+            <ScrollToSection />
             <Routes>
               {/* <Route path="/" element={<Layout> {...sections}</Layout>}></Route> */}
 
