@@ -1,8 +1,7 @@
 //TODO: Add an error boundary
 //TODO: make a "Section" component for all the content sections (Maybe)
 //TODO: update ProjectOverview component to take content as props and have a function to generate bulleted lists.
-//TODO: update project page to accept props for content with option for Project Demo or Project Gallery.
-//TODO: sort out navbar on scroll events
+//TODO: create a router file and utilize createBrowserRouter https://reactrouter.com/en/main/routers/picking-a-router
 
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
@@ -46,9 +45,6 @@ const App = () => {
             <ScrollToTop />
             <ScrollToSection />
             <Routes>
-              {/* <Route path="/" element={<Layout> {...sections}</Layout>}></Route> */}
-
-              {/* <Route path="/projects/*" element={<ProjectPage />}></Route> */}
               <Route element={<Layout />}>
                 <Route path="/" element={<Home />} />
                 {/* <Route path="/projects/*" element={<ProjectPage />}></Route> */}

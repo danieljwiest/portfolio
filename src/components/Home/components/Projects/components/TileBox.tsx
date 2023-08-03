@@ -33,7 +33,7 @@ const TileBox = ({ data }: { data: DataItem }) => {
       }}
     >
       <Link
-        to={`/Projects/${routeId}`}
+        to={`/projects/${routeId}`}
         className={`is-flex is-flex-direction-column is-align-items-center  is-justify-content-center square tileImage ${hoverClass}`}
       >
         {hoverClass === "hover" ? title : null}

@@ -67,7 +67,7 @@ const Calculator = () => {
   ];
 
   const sections = [
-    { label: "Home", link: "#home", content: <Hero {...heroProps} /> },
+    { label: "home", link: "#home", content: <Hero {...heroProps} /> },
     {
       label: "Project Overview",
       link: "#overview",

@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { useNavLinkContext } from "../../../contexts/NavLinkContext/NavLinkContext";
 import { NavLinkData } from "../../../contexts/NavLinkContext/NavLinkContext.types";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faChevronCircleUp } from "@fortawesome/free-solid-svg-icons";
 import "./Navbar.styles.css";
 
 const Navbar = () => {
@@ -34,13 +36,19 @@ const Navbar = () => {
     navLinkData === null
       ? null
       : navLinkData.map((item: NavLinkData) => {
+          const linkDisplay =
+            item.label === "home" || item.label === "Home" ? (
+              <FontAwesomeIcon icon={faChevronCircleUp} size="lg" />
+            ) : (
+              item.label
+            );
           return (
             <a
               key={item.label}
               href={item.link}
               className={`navbar-item is-size-4 ${textColor}`}
             >
-              {item.label}
+              {linkDisplay}
             </a>
           );
         });
@@ -55,7 +63,7 @@ const Navbar = () => {
       <div className="navbar-brand">
         <a className="navbar-item" href="/">
           <p
-            className={`logo has-text-white is-size-2 has-text-centered has-text-justified`}
+            className={`logo has-text-white is-size-3 has-text-centered has-text-justified`}
           >
             DW
           </p>
