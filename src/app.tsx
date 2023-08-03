@@ -64,7 +64,7 @@ const App = () => {
                   element={<TimeStamp />}
                 />
                 <Route
-                  path="/projects/header-parser-microservice"
+                  path="/projects/request-header-parser-microservice"
                   element={<HeaderParser />}
                 />
                 <Route
