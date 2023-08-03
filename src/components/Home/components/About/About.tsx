@@ -9,7 +9,7 @@ const About = () => {
         <div className="tile is-ancestor">
           <div className="tile px-6 pt-5">
             <figure className="image">
-              <img src="/img/image_1_long.jpg.webp" alt="HeadShot"></img>
+              <img src="/img/family-portrait.jpg" alt="HeadShot"></img>
             </figure>
           </div>
           <div className="tile is-parent is-vertical px-6">
