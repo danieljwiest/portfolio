@@ -36,12 +36,14 @@ const Navbar = () => {
     navLinkData === null
       ? null
       : navLinkData.map((item: NavLinkData) => {
-          const linkDisplay =
-            item.label === "home" || item.label === "Home" ? (
-              <FontAwesomeIcon icon={faChevronCircleUp} size="lg" />
+          let linkDisplay: string | JSX.Element = item.label;
+          if (item.label === "home" || item.label === "Home") {
+            linkDisplay = burgerActive ? (
+              "Top"
             ) : (
-              item.label
+              <FontAwesomeIcon icon={faChevronCircleUp} size="lg" />
             );
+          }
           return (
             <a
               key={item.label}
@@ -55,7 +57,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`navbar ${navColor} is-transparent is-fixed-top`} //FIX: add has-navbar-fixed-top to html or body tag.
+      className={`navbar ${navColor} is-transparent is-fixed-top`}
       role="navigation"
       aria-label="main navigation"
     >
@@ -71,7 +73,6 @@ const Navbar = () => {
 
         {/* Hamburger */}
         <button
-          //   role="button"
           onClick={() => {
             setBurgerActive(!burgerActive);
           }}
