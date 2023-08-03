@@ -15,7 +15,7 @@ const UrlShortener = () => {
   };
 
   //Link to Demo if applicable
-  const demoUrl = "https://fcc-headerparser-production.up.railway.app/";
+  const demoUrl = "https://fcc-urlshortener-production.up.railway.app/";
 
   //Link to gallery if applicable
   //   const galleryUrl = "";
@@ -52,7 +52,7 @@ const UrlShortener = () => {
     },
     {
       text: "URL Shortener Microservice Hosted Site",
-      url: "https://fcctimestamp-microservice-production.up.railway.app/",
+      url: "https://fcc-urlshortener-production.up.railway.app",
     },
   ];
 

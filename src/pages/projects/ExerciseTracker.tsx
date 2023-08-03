@@ -15,7 +15,8 @@ const ExerciseTracker = () => {
   };
 
   //Link to Demo if applicable
-  const demoUrl = "https://fcc-headerparser-production.up.railway.app/";
+  const demoUrl =
+    "https://fcc-exercise-tracker-production-e8e7.up.railway.app/";
 
   //Link to gallery if applicable
   //   const galleryUrl = "";
@@ -53,7 +54,7 @@ const ExerciseTracker = () => {
     },
     {
       text: "URL Shortener Microservice Hosted Site",
-      url: "https://fcctimestamp-microservice-production.up.railway.app/",
+      url: "https://fcc-exercise-tracker-production-e8e7.up.railway.app/",
     },
   ];
 
