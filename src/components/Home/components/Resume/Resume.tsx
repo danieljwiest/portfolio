@@ -13,7 +13,7 @@ const Resume = () => {
         <div className="columns is-desktop">
           <div className={`column is-5-desktop is-justify-content-center pt-5`}>
             <figure className="image is-3x4">
-              <img src="/img/image_1_long.jpg.webp" alt="HeadShot"></img>
+              <img src="/img/danielwiest-portrait.JPG" alt="HeadShot"></img>
             </figure>
             <div className="is-flex is-justify-content-center my-4">
               <a
