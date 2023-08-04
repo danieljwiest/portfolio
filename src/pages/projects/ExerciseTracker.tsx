@@ -5,7 +5,7 @@ import Hero from "../../components/common/Hero/Hero";
 import { HeroProps } from "../../types/AppTypes";
 
 const ExerciseTracker = () => {
-  const title = "Exercise Tracker Microservice";
+  const title = "Exercise Tracker Micro-service";
 
   //Default Hero Props for all Project Pages
   const heroProps: HeroProps = {

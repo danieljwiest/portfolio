@@ -5,7 +5,7 @@ import Hero from "../../components/common/Hero/Hero";
 import { HeroProps } from "../../types/AppTypes";
 
 const UrlShortener = () => {
-  const title = "URL Shortener Microservice";
+  const title = "URL Shortener Micro-service";
 
   //Default Hero Props for all Project Pages
   const heroProps: HeroProps = {

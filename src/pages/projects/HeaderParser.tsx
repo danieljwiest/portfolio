@@ -5,7 +5,7 @@ import Hero from "../../components/common/Hero/Hero";
 import { HeroProps } from "../../types/AppTypes";
 
 const HeaderParser = () => {
-  const title = "Request Header Parser Microservice";
+  const title = "Request Header Parser Micro-service";
 
   //Default Hero Props for all Project Pages
   const heroProps: HeroProps = {
