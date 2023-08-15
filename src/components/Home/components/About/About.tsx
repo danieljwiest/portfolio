@@ -34,7 +34,7 @@ const About = () => {
                 <li>Program Technical Lead</li>
               </ul>
               <p>
-                To date my software experience has primarly utilized
+                To date my software experience has primarily utilized
                 Javascript/Typescript, React, and Node.JS. I am, however, an
                 Engineer at heart and am no stranger to adapting to the tools
                 needed for the project at hand.
