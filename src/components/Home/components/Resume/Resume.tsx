@@ -79,6 +79,18 @@ const Resume = () => {
               position="BS Mechanical Engineering"
               period="08/2006-05/2010"
             />
+            <ResumeItem
+              company={"Frontend Masters"}
+              location="Remote"
+              position="Web Development - JS, CSS, React, Data Structures/Algorithms"
+              period="01/2023-PRESENT"
+            />
+            <ResumeItem
+              company={"Free Code Camp"}
+              location="Remote"
+              position="Software Engineering - JS, Node.JS, Express, PostgreSQL, MongoDB, Python"
+              period="08/2022-PRESENT"
+            />
             <div className="title is-size-3">Liscensure</div>
             <ResumeItem
               company={"WA State Board of Licensing"}

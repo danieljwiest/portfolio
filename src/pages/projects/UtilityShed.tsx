@@ -1,6 +1,6 @@
 import ContentPage from "../../components/common/ContentPage/ContentPage";
-import ProjectOverview from "../../components/common/ProjectPage.tsx/components/ProjectOverview/ProjectOverview";
-import ProjectGallery from "../../components/common/ProjectPage.tsx/components/ProjectGallery/ProjectGallery";
+import ProjectOverview from "../../components/ProjectPage/components/ProjectOverview/ProjectOverview";
+import ProjectGallery from "../../components/ProjectPage/components/ProjectGallery/ProjectGallery";
 import Hero from "../../components/common/Hero/Hero";
 import { HeroProps } from "../../types/AppTypes";
 

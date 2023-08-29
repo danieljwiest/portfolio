@@ -6,19 +6,21 @@ const Contact = () => {
           <div className="subtitle is-flex is-justify-content-center">
             Phone
           </div>
-          <div className="is-flex is-justify-content-center">509.860.5434</div>
+          <div className="is-flex is-justify-content-center">
+            <a href="tel:509.860.5434">509.860.5434</a>
+          </div>
         </div>
         <div className="column is-one-third is-flex is-justify-content-center is-align-content-center is-flex-direction-column">
           <div className="subtitle is-flex is-justify-content-center">
             Email
           </div>
           <div className="is-flex is-justify-content-center">
-            dwiest4@gmail.com
+            <a href="mailto:dwiest4@gmail.com">dwiest4@gmail.com</a>
           </div>
         </div>
         <div className="column is-one-third is-flex is-justify-content-center is-align-content-center is-flex-direction-column">
           <div className="subtitle is-flex is-justify-content-center">
-            Social
+            Connect
           </div>
           <div className="is-flex is-justify-content-center">
             <span className="icon">

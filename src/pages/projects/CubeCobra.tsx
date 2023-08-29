@@ -1,5 +1,5 @@
 import ContentPage from "../../components/common/ContentPage/ContentPage";
-import ProjectOverview from "../../components/common/ProjectPage.tsx/components/ProjectOverview/ProjectOverview";
+import ProjectOverview from "../../components/ProjectPage/components/ProjectOverview/ProjectOverview";
 // import ProjectDemo from "../../components/common/ProjectPage.tsx/components/ProjectDemo/ProjectDemo";
 import Hero from "../../components/common/Hero/Hero";
 import { HeroProps } from "../../types/AppTypes";
